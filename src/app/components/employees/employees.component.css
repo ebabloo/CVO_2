@@ -1,0 +1,15 @@
+select.form-control{
+    border-radius:10px;
+}
+/* 
+.adminTableSearch{
+    border-radius: 10px !important;
+} */
+
+input{
+    border-radius: 10px;
+}
+
+img{
+    border-radius: 30px;
+}
