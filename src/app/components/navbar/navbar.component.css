@@ -7,9 +7,14 @@
   box-shadow: 1px 1px 6px 1px #ccc;
   padding: 6px 20px;
   /* background-image: linear-gradient(to right, #4f92ff, #99bffd); */
-  background-image: linear-gradient(to right, #507cff, #adc1e2c4)
+  background-image: linear-gradient(to right, #507cff, #adc1e2c4);
 }
 
-a{
-    cursor: pointer;
+a {
+  cursor: pointer;
+}
+
+.bg-light {
+  border-radius: 5px;
+  background-color: #f7f9fc !important;
 }
