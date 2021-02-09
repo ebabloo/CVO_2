@@ -1,0 +1,38 @@
+select.form-control {
+  border-radius: 10px;
+}
+/* 
+.adminTableSearch{
+    border-radius: 10px !important;
+} */
+
+input {
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 30px;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 5px;
+    height: 34px;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png)no-repeat right #fff;
+    appearance:none;
+    -moz-appearance:none; 
+    -webkit-appearance:none; 
+    background-position-x: calc(100% - 14px);
+
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
