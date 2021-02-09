@@ -10,6 +10,7 @@ import { AdmindashboardComponent } from './components/admindashboard/admindashbo
 import { PhysiciandashboardComponent } from './components/physiciandashboard/physiciandashboard.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { EmployeesComponent } from './components/employees/employees.component';
+import { ManagecredentialsComponent } from './components/managecredentials/managecredentials.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { EmployeesComponent } from './components/employees/employees.component';
     PhysiciandashboardComponent,
     NavbarComponent,
     EmployeesComponent,
+    ManagecredentialsComponent,
   ],  
   imports: [
     BrowserModule,

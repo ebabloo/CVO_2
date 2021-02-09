@@ -16,8 +16,8 @@ export class NavbarComponent implements OnInit {
       "linkName": "Dashboard"
     },
     {
-      "iconName": "local_hospital",
-      "linkName": "Features"
+      "iconName": "insert_drive_file",
+      "linkName": "Manage Credentials"
     },
     {
       "iconName": "search",
@@ -53,6 +53,10 @@ export class NavbarComponent implements OnInit {
     switch (index) {
       case 0:
         this.router.navigate(['/physician'])
+        break;
+
+        case 1:
+        this.router.navigate(['/managecredentials'])
         break;
 
       case 3:
