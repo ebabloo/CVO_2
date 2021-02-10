@@ -1,3 +1,4 @@
+import { PersonalInformationComponent } from './components/personal-information/personal-information.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { LoginComponent } from './components/login/login.component';
 import { NgModule } from '@angular/core';
@@ -10,11 +11,17 @@ import { PhysiciandashboardComponent } from "./components/physiciandashboard/phy
 const routes: Routes = [
   { path: "", component: LoginComponent },
   { path: "login", component: LoginComponent },
-  { path: "sign-up", component: SignupComponent},
+  { path: "sign-up", component: SignupComponent },
   { path: "physician", component: PhysiciandashboardComponent },
   { path: "admin", component: AdmindashboardComponent },
   { path: "employees", component: EmployeesComponent },
-  { path: "managecredentials", component: ManagecredentialsComponent }
+  {
+    path: "managecredentials",
+    component: ManagecredentialsComponent,
+    children: [
+      { path: "pensonal-info", component: PersonalInformationComponent }
+    ]
+  }
 
 ];
 
