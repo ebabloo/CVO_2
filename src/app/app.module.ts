@@ -10,6 +10,8 @@ import { AdmindashboardComponent } from './components/admindashboard/admindashbo
 import { PhysiciandashboardComponent } from './components/physiciandashboard/physiciandashboard.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { EmployeesComponent } from './components/employees/employees.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
 import { ManagecredentialsComponent } from './components/managecredentials/managecredentials.component';
 import { PersonalInformationComponent } from './components/personal-information/personal-information.component';
 
@@ -21,6 +23,8 @@ import { PersonalInformationComponent } from './components/personal-information/
     PhysiciandashboardComponent,
     NavbarComponent,
     EmployeesComponent,
+    LoginComponent,
+    SignupComponent,
     ManagecredentialsComponent,
     PersonalInformationComponent
   ],  
