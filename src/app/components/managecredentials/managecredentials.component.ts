@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 
@@ -17,48 +18,48 @@ export class ManagecredentialsComponent implements OnInit, OnDestroy {
 
   menuItems = [
     {
-      displayName: 'Personal Information',
-      path: '/managecredentials/personal-info',
-      icon: ''
+      displayName: "Personal Information",
+      path: "./personalInfo",
+      icon: ""
     },
     {
       displayName: 'Work Experience',
-      path: '',
+      path: "./workexp",
       icon: ''
     },
     {
       displayName: 'Medical Mal Practice',
-      path: '',
+      path: './medicalmalpractice',
       icon: ''
     },
     {
       displayName: 'Peer References',
-      path: '',
+      path: './peerref',
       icon: ''
     },
     {
       displayName: 'Licensure',
-      path: '',
+      path: './licensure',
       icon: ''
     },
     {
       displayName: 'Payor\'s Information',
-      path: '',
+      path: './payorinfo',
       icon: ''
     },
     {
       displayName: 'CME',
-      path: '',
+      path: './cme',
       icon: ''
     },
     {
       displayName: 'Documents',
-      path: '',
+      path: './documents',
       icon: ''
     },
     {
       displayName: 'Summary',
-      path: '',
+      path: './summary',
       icon: ''
     }
   ]
@@ -72,7 +73,10 @@ export class ManagecredentialsComponent implements OnInit, OnDestroy {
 
   private _mobileQueryListener: () => void;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+  constructor(
+    changeDetectorRef: ChangeDetectorRef,
+    media: MediaMatcher,
+    private router: Router) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
@@ -84,4 +88,8 @@ export class ManagecredentialsComponent implements OnInit, OnDestroy {
 
   shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
 
+  onClick(itemData: any) {
+    console.log(itemData)
+    this.router.navigate(['./personalInfo'])
+  }
 }
