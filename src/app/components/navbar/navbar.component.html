@@ -20,7 +20,7 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                         <div class="navbar-nav" *ngFor="let navLink of navLinks; let i = index">
-                            <a class="nav-item nav-link mx-2" [class.active]="activeClass === i"
+                            <a class="nav-item nav-link mx-2 linkname" [class.active]="activeClass === i"
                                 (click)="changeActiveClass(i)"
                                 style="display: flex; align-items: center;font-family:Open Sans">
                                 <mat-icon class="mr-1">{{navLink.iconName}}</mat-icon>{{navLink.linkName}}
