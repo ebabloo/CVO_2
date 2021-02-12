@@ -7,7 +7,7 @@ import { PeerReferencesComponent } from './peer-references/peer-references.compo
 import { MedicalMalPracticeComponent } from './medical-mal-practice/medical-mal-practice.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { ManagecredentialsComponent } from './managecredentials.component';
-import { PersonalInformationComponent } from './../personal-information/personal-information.component';
+import { PersonalInformationComponent } from './personal-information/personal-information.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 

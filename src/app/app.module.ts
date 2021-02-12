@@ -15,8 +15,6 @@ import { EmployeesComponent } from "./components/employees/employees.component";
 import { LoginComponent } from "./components/login/login.component";
 import { SignupComponent } from "./components/signup/signup.component";
 
-import { PersonalInformationComponent } from "./components/personal-information/personal-information.component";
-
 import { LandingComponent } from "./layouts/landing/landing.component";
 import { FullComponent } from "./layouts/full/full.component";
 import { CustomMaterialModule } from "./material";
@@ -29,7 +27,6 @@ import { CustomMaterialModule } from "./material";
     EmployeesComponent,
     LoginComponent,
     SignupComponent,
-    PersonalInformationComponent,
     LandingComponent,
     FullComponent,
   ],
