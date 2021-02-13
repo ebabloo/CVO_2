@@ -18,6 +18,12 @@ export class WorkExperienceComponent implements OnInit {
     {value: 'mds', viewValue: 'MDs'}
   ];
 
+  titleList: DropdownValues[] = [
+    {value: 'mr', viewValue: 'Mr'},
+    {value: 'mrs', viewValue: 'Mrs'},
+    {value: 'ms', viewValue: 'MS'}
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
