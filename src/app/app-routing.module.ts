@@ -1,6 +1,5 @@
 import { FullComponent } from './layouts/full/full.component';
 import { LandingComponent } from './layouts/landing/landing.component';
-import { PersonalInformationComponent } from './components/personal-information/personal-information.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { LoginComponent } from './components/login/login.component';
 import { NgModule } from '@angular/core';
