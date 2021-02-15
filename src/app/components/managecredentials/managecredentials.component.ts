@@ -21,6 +21,11 @@ export class ManagecredentialsComponent implements OnInit, OnDestroy {
       icon: "",
     },
     {
+      displayName: "Professional And Educational Info",
+      path: "./professionalAndEducationInfo",
+      icon: "",
+    },
+    {
       displayName: "Work Experience",
       path: "./workexp",
       icon: "",
