@@ -10,6 +10,7 @@ import { ManagecredentialsComponent } from './managecredentials.component';
 import { PersonalInformationComponent } from './personal-information/personal-information.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ProfessionalAndEducationalInfoComponent } from './professional-and-educational-info/professional-and-educational-info.component';
 
 // const routes: Routes = [];
 
@@ -28,6 +29,10 @@ export const ManageCredentialsRouting: Routes = [
       {
         path: 'personalInfo',
         component: PersonalInformationComponent
+      },
+      {
+        path: 'professionalAndEducationInfo',
+        component: ProfessionalAndEducationalInfoComponent
       },
       {
         path: 'workexp',

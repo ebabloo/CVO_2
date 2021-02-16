@@ -14,9 +14,10 @@ import { PayorInformationComponent } from './payor-information/payor-information
 import { CmeComponent } from './cme/cme.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { SummaryComponent } from './summary/summary.component';
+import { ProfessionalAndEducationalInfoComponent } from './professional-and-educational-info/professional-and-educational-info.component';
 
 @NgModule({
-  declarations: [PersonalInformationComponent, ManagecredentialsComponent, WorkExperienceComponent, MedicalMalPracticeComponent, PeerReferencesComponent, LicensureComponent, PayorInformationComponent, CmeComponent, DocumentsComponent, SummaryComponent],
+  declarations: [PersonalInformationComponent, ManagecredentialsComponent, WorkExperienceComponent, MedicalMalPracticeComponent, PeerReferencesComponent, LicensureComponent, PayorInformationComponent, CmeComponent, DocumentsComponent, SummaryComponent, ProfessionalAndEducationalInfoComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(ManageCredentialsRouting),
