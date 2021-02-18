@@ -10,7 +10,12 @@ import { ChangeDetectorRef, Component, OnDestroy, OnInit } from "@angular/core";
 export class ManagecredentialsComponent implements OnInit, OnDestroy {
   selectedPath: string = "./personalInfo";
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const selectedPath = localStorage.getItem('manageCredentialCurrentForm');
+    if(selectedPath){
+      this.selectedPath = selectedPath;
+    }
+  }
 
   mobileQuery: MediaQueryList;
 
@@ -104,5 +109,6 @@ export class ManagecredentialsComponent implements OnInit, OnDestroy {
 
   onItemClick(path: string) {
     this.selectedPath = path;
+    localStorage.setItem('manageCredentialCurrentForm', path);
   }
 }
