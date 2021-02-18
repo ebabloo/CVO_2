@@ -1,1 +1,142 @@
-<p>payor-information works!</p>
+<div class="container p-2" style="background-color: #f7f9fc">
+    <mat-card>
+      <div class="row">
+        <div class="col-lg-12">
+          <span style="display: inline-flex; margin-bottom: 12px">
+            <mat-icon class="m-1">edit</mat-icon>
+            <mat-card-title style="margin: 6px">Payor's Information</mat-card-title>
+          </span>
+          <mat-divider></mat-divider>
+        </div>
+  
+        <div class="col-lg-12">
+          <h4
+            style="
+              border-bottom: 1px solid #e0e0e0;
+              margin-top: 20px;
+              font-size: 16px;
+            "
+          >
+            Healthcare payor
+          </h4>
+        </div>
+  
+        <div class="col-lg-3">
+          <mat-form-field appearance="standard" class="w-100">
+            <mat-label>Hospital Affiliation</mat-label>
+            <input matInput placeholder="Enter hospital affiliation" />
+          </mat-form-field>
+        </div>
+  
+        <div class="col-lg-3">
+          <mat-form-field appearance="standard" class="w-100">
+            <mat-label>Payor name</mat-label>
+            <input matInput placeholder="Enter payor name" />
+          </mat-form-field>
+        </div>
+  
+        <div class="col-lg-6 col-6 mt-4" style="display: inline-flex">
+            <mat-label class="mx-1">is it primary payor?</mat-label>
+            <div>
+              <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Yes</mat-radio-button>
+                <mat-radio-button value="0">No</mat-radio-button>
+              </mat-radio-group>
+            </div>
+        </div>
+  
+        <div class="col-lg-2">
+          <mat-form-field appearance="standard" class="w-100">
+            <mat-label>Plan Type</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let prefix of prefixes" [value]="prefix.value">
+                {{ prefix.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+  
+        <div class="col-lg-3">
+          <mat-form-field appearance="standard" class="w-100">
+            <mat-label>Payor state </mat-label>
+            <input matInput placeholder="Enter payor state" />
+          </mat-form-field>
+        </div>
+  
+        <div class="col-lg-3">
+          <mat-form-field appearance="standard" class="w-100">
+            <mat-label>Paylor status</mat-label>
+            <input matInput placeholder="Enter payor status" />
+          </mat-form-field>
+        </div>
+
+        <div class="col-lg-3">
+            <mat-form-field appearance="standard" class="w-100">
+              <mat-label>Provider number</mat-label>
+              <input matInput placeholder="Enter provider number" />
+            </mat-form-field>
+          </div>
+  
+        <div class="col-lg-3 col-md-12 col-sm-12">
+          <mat-form-field appearance="standard" class="w-100">
+            <mat-label>Start Date</mat-label>
+            <input matInput [matDatepicker]="startDate" class="w-100">
+            <mat-datepicker-toggle matSuffix [for]="startDate"></mat-datepicker-toggle>
+            <mat-datepicker #startDate></mat-datepicker>
+          </mat-form-field>
+        </div>
+
+        <div class="col-lg-3 col-md-12 col-sm-12">
+            <mat-form-field appearance="standard" class="w-100">
+              <mat-label>End Date</mat-label>
+              <input matInput [matDatepicker]="endDate" class="w-100">
+              <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
+              <mat-datepicker #endDate></mat-datepicker>
+            </mat-form-field>
+          </div>
+  
+        <div class="col-lg-3">
+          <mat-form-field appearance="standard" class="w-100">
+            <mat-label>PAR Status </mat-label>
+            <input matInput placeholder="Enter Your PAR Status " />
+          </mat-form-field>
+        </div>
+  
+        <div class="col-lg-12">
+          <h4 style="border-bottom: 1px solid #e0e0e0;margin-top:20px;font-size: 16px;">Healthcare payor contact</h4>
+        </div>
+  
+        <div class="col-lg-3">
+          <mat-form-field appearance="standard" class="w-100">
+            <mat-label>Contact Name</mat-label>
+            <input matInput placeholder="Enter contact name" class="w-100">
+          </mat-form-field>
+        </div>
+  
+        <div class="col-lg-3">
+          <mat-form-field appearance="standard" class="w-100">
+            <mat-label>Contact Email</mat-label>
+            <input matInput placeholder="Enter contact email" class="w-100">
+            <mat-icon matSuffix>email</mat-icon>
+          </mat-form-field>
+        </div>
+
+        <div class="col-lg-3">
+            <mat-form-field appearance="standard" class="w-100">
+              <mat-label>Contact Phone</mat-label>
+              <input matInput placeholder="Enter contact phone" class="w-100">
+              <mat-icon matSuffix>local_phone</mat-icon>
+            </mat-form-field>
+          </div>
+  
+        <div class="col-lg-3">
+          <mat-form-field appearance="standard" class="w-100">
+            <mat-label>Contact Fax</mat-label>
+            <input matInput placeholder="Enter contact fax" class="w-100">
+            <mat-icon matSuffix>print</mat-icon>
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  
